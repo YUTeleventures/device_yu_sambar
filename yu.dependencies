@@ -1,11 +1,11 @@
 [
   {
-    "repository": "kernel_yu_sambar",
+    "repository": "YUTeleventures/kernel_yu_sambar",
     "target_path": "kernel/yu/sambar",
      "branch":      "yu-mm-6.0.1"
   },
   {
-    "repository": "proprietary_vendor_yu",
+    "repository": "YUTeleventures/proprietary_vendor_yu",
     "target_path": "vendor/yu",
      "branch":      "yu-mm-6.0.1"
   }
