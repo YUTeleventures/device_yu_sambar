@@ -68,6 +68,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 endif
 TARGET_KERNEL_CONFIG := yu_sambar_defconfig
 TARGET_KERNEL_SOURCE := kernel/yu/sambar
+BOARD_CUSTOM_BOOTIMG_MK := device/yu/sambar/mkbootimg.mk
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
