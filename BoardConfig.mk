@@ -32,7 +32,7 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a53
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
@@ -46,12 +46,10 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a53
 endif
 
 TARGET_CPU_CORTEX_A53 := true
-ENABLE_CPUSETS := true
 
 # Kernel
 BOARD_DTBTOOL_ARGS := -2
@@ -68,7 +66,6 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 endif
 TARGET_KERNEL_CONFIG := yu_sambar_defconfig
 TARGET_KERNEL_SOURCE := kernel/yu/sambar
-BOARD_CUSTOM_BOOTIMG_MK := device/yu/sambar/mkbootimg.mk
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
@@ -174,6 +171,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
+TARGET_POWER_SET_FEATURE_LIB := libpower_set_feature
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
@@ -184,9 +182,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 ifneq (,$(filter linux darwin, $(HOST_OS)))
 TARGET_USERIMAGES_USE_F2FS := true
 endif
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true

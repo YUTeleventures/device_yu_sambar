@@ -25,7 +25,7 @@
 
 #include <hardware/power.h>
 
-#define LOG_TAG "Bacon_power_feature"
+#define LOG_TAG "Sambar_power_feature"
 #include <utils/Log.h>
 
 #define CONTROL_PATH "/sys/devices/soc.0/f9924000.i2c/i2c-2/2-004a/gesture_list"
