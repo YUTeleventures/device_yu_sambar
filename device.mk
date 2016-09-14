@@ -131,9 +131,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8994
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=256m
-
 PRODUCT_PACKAGES += \
     fingerprint.msm8994 \
     fingerprintd
