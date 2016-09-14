@@ -172,8 +172,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    $(LOCAL_PATH)/keylayout/silead-vinput-keypad.kl:system/usr/keylayout/silead-vinput-keypad.kl \
-    $(LOCAL_PATH)/keylayout/silead-vinput-keypad.kcm:system/usr/keychars/silead-vinput-keypad.kcm
+    $(LOCAL_PATH)/keylayout/silead-vinput-keypad.kl:system/usr/keylayout/silead-vinput-keypad.kl
 
 # Keystore
 PRODUCT_PACKAGES += \
